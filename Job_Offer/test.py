@@ -43,6 +43,6 @@ if __name__ == "__main__":
 
     import sys
     if (sys.argv.__len__() > 1):
-        n = int(sys.argv[1])
+        SIZE = int(sys.argv[1])
 
     test(SIZE)
