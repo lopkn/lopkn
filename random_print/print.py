@@ -56,6 +56,9 @@ def draw_grass(size):
         if rng == 55 :
             sys.stdout.write(bcolors.UNDERLINE + ".//\." + bcolors.ENDC),
             continue
+        if rng == 56 :
+            sys.stdout.write(bcolors.UNDERLINE + "_|{|^\." + bcolors.ENDC),
+            continue
         sys.stdout.write(bcolors.OKGREEN + ",," + bcolors.ENDC)
 
 def draw_sea(size):
@@ -78,7 +81,7 @@ def draw_sea(size):
 
 for i in range(8):
     rng1 = int(math.ceil(random() * 100))
-    rng2 = int(math.ceil(random() * 1000 + 600))
+    rng2 = int(math.ceil(random() * 1000 + 1000))
     if rng1 >= 40 and rng1 < 78:
         draw_desert(rng2)
     if rng1 <= 39:
